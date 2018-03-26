@@ -17,139 +17,147 @@
         <div class="col-sm-6">
           <h2>Sudoku Board</h2>
 
-          <table id="grid">
+          <form id="sudokuForm">
 
-            <tr>
-              <td><input id="cell-0"  type="text"></td>
-              <td><input id="cell-1"  type="text"></td>
-              <td><input id="cell-2"  type="text"></td>
-              
-              <td><input id="cell-3"  type="text"></td>
-              <td><input id="cell-4"  type="text"></td>
-              <td><input id="cell-5"  type="text"></td>
-              
-              <td><input id="cell-6"  type="text"></td>
-              <td><input id="cell-7"  type="text"></td>
-              <td><input id="cell-8"  type="text"></td>
-            </tr>
+            <table id="grid">
 
-            <tr>
-              <td><input id="cell-9"  type="text"></td>
-              <td><input id="cell-10" type="text"></td>
-              <td><input id="cell-11" type="text"></td>
-              
-              <td><input id="cell-12" type="text"></td>
-              <td><input id="cell-13" type="text"></td>
-              <td><input id="cell-14" type="text"></td>
-              
-              <td><input id="cell-15" type="text"></td>
-              <td><input id="cell-16" type="text"></td>
-              <td><input id="cell-17" type="text"></td>
-            </tr>
+              <tr>
+                <td><input id="cell-0"  type="number" min="1" max="9"></td>
+                <td><input id="cell-1"  type="number" min="1" max="9"></td>
+                <td><input id="cell-2"  type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-3"  type="number" min="1" max="9"></td>
+                <td><input id="cell-4"  type="number" min="1" max="9"></td>
+                <td><input id="cell-5"  type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-6"  type="number" min="1" max="9"></td>
+                <td><input id="cell-7"  type="number" min="1" max="9"></td>
+                <td><input id="cell-8"  type="number" min="1" max="9"></td>
+              </tr>
 
-            <tr>          
-              <td><input id="cell-18" type="text"></td>
-              <td><input id="cell-19" type="text"></td>
-              <td><input id="cell-20" type="text"></td>
-              
-              <td><input id="cell-21" type="text"></td>
-              <td><input id="cell-22" type="text"></td>
-              <td><input id="cell-23" type="text"></td>
-              
-              <td><input id="cell-24" type="text"></td>
-              <td><input id="cell-25" type="text"></td>
-              <td><input id="cell-26" type="text"></td>
-            </tr>
+              <tr>
+                <td><input id="cell-9"  type="number" min="1" max="9"></td>
+                <td><input id="cell-10" type="number" min="1" max="9"></td>
+                <td><input id="cell-11" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-12" type="number" min="1" max="9"></td>
+                <td><input id="cell-13" type="number" min="1" max="9"></td>
+                <td><input id="cell-14" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-15" type="number" min="1" max="9"></td>
+                <td><input id="cell-16" type="number" min="1" max="9"></td>
+                <td><input id="cell-17" type="number" min="1" max="9"></td>
+              </tr>
 
-            <tr>          
-              <td><input id="cell-27" type="text"></td>
-              <td><input id="cell-28" type="text"></td>
-              <td><input id="cell-29" type="text"></td>
-              
-              <td><input id="cell-30" type="text"></td>
-              <td><input id="cell-31" type="text"></td>
-              <td><input id="cell-32" type="text"></td>
-              
-              <td><input id="cell-33" type="text"></td>
-              <td><input id="cell-34" type="text"></td>
-              <td><input id="cell-35" type="text"></td>
-            </tr>
+              <tr>          
+                <td><input id="cell-18" type="number" min="1" max="9"></td>
+                <td><input id="cell-19" type="number" min="1" max="9"></td>
+                <td><input id="cell-20" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-21" type="number" min="1" max="9"></td>
+                <td><input id="cell-22" type="number" min="1" max="9"></td>
+                <td><input id="cell-23" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-24" type="number" min="1" max="9"></td>
+                <td><input id="cell-25" type="number" min="1" max="9"></td>
+                <td><input id="cell-26" type="number" min="1" max="9"></td>
+              </tr>
 
-            <tr>          
-              <td><input id="cell-36" type="text"></td>
-              <td><input id="cell-37" type="text"></td>
-              <td><input id="cell-38" type="text"></td>
-              
-              <td><input id="cell-39" type="text"></td>
-              <td><input id="cell-40" type="text"></td>
-              <td><input id="cell-41" type="text"></td>
-              
-              <td><input id="cell-42" type="text"></td>
-              <td><input id="cell-43" type="text"></td>
-              <td><input id="cell-44" type="text><"/td>
-            </tr>
+              <tr>          
+                <td><input id="cell-27" type="number" min="1" max="9"></td>
+                <td><input id="cell-28" type="number" min="1" max="9"></td>
+                <td><input id="cell-29" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-30" type="number" min="1" max="9"></td>
+                <td><input id="cell-31" type="number" min="1" max="9"></td>
+                <td><input id="cell-32" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-33" type="number" min="1" max="9"></td>
+                <td><input id="cell-34" type="number" min="1" max="9"></td>
+                <td><input id="cell-35" type="number" min="1" max="9"></td>
+              </tr>
 
-            <tr>          
-              <td><input id="cell-45" type="text"></td>
-              <td><input id="cell-46" type="text"></td>
-              <td><input id="cell-47" type="text"></td>
-              
-              <td><input id="cell-48" type="text"></td>
-              <td><input id="cell-49" type="text"></td>
-              <td><input id="cell-50" type="text"></td>
-              
-              <td><input id="cell-51" type="text"></td>
-              <td><input id="cell-52" type="text"></td>
-              <td><input id="cell-53" type="text"></td>
-            </tr>
+              <tr>          
+                <td><input id="cell-36" type="number" min="1" max="9"></td>
+                <td><input id="cell-37" type="number" min="1" max="9"></td>
+                <td><input id="cell-38" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-39" type="number" min="1" max="9"></td>
+                <td><input id="cell-40" type="number" min="1" max="9"></td>
+                <td><input id="cell-41" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-42" type="number" min="1" max="9"></td>
+                <td><input id="cell-43" type="number" min="1" max="9"></td>
+                <td><input id="cell-44" type="number" min="1" max="9"></td>
+              </tr>
 
-            <tr>          
-              <td><input id="cell-54" type="text"></td>
-              <td><input id="cell-55" type="text"></td>
-              <td><input id="cell-56" type="text"></td>
-              
-              <td><input id="cell-57" type="text"></td>
-              <td><input id="cell-58" type="text"></td>
-              <td><input id="cell-59" type="text"></td>
-              
-              <td><input id="cell-60" type="text"></td>
-              <td><input id="cell-61" type="text"></td>
-              <td><input id="cell-62" type="text"></td>
-            </tr>
+              <tr>          
+                <td><input id="cell-45" type="number" min="1" max="9"></td>
+                <td><input id="cell-46" type="number" min="1" max="9"></td>
+                <td><input id="cell-47" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-48" type="number" min="1" max="9"></td>
+                <td><input id="cell-49" type="number" min="1" max="9"></td>
+                <td><input id="cell-50" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-51" type="number" min="1" max="9"></td>
+                <td><input id="cell-52" type="number" min="1" max="9"></td>
+                <td><input id="cell-53" type="number" min="1" max="9"></td>
+              </tr>
 
-            <tr>          
-              <td><input id="cell-63" type="text"></td>
-              <td><input id="cell-64" type="text"></td>
-              <td><input id="cell-65" type="text"></td>
-              
-              <td><input id="cell-66" type="text"></td>
-              <td><input id="cell-67" type="text"></td>
-              <td><input id="cell-68" type="text"></td>
-              
-              <td><input id="cell-69" type="text"></td>
-              <td><input id="cell-70" type="text"></td>
-              <td><input id="cell-71" type="text"></td>
-            </tr>
+              <tr>          
+                <td><input id="cell-54" type="number" min="1" max="9"></td>
+                <td><input id="cell-55" type="number" min="1" max="9"></td>
+                <td><input id="cell-56" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-57" type="number" min="1" max="9"></td>
+                <td><input id="cell-58" type="number" min="1" max="9"></td>
+                <td><input id="cell-59" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-60" type="number" min="1" max="9"></td>
+                <td><input id="cell-61" type="number" min="1" max="9"></td>
+                <td><input id="cell-62" type="number" min="1" max="9"></td>
+              </tr>
 
-            <tr>          
-              <td><input id="cell-72" type="text"></td>
-              <td><input id="cell-73" type="text"></td>
-              <td><input id="cell-74" type="text"></td>
-              
-              <td><input id="cell-75" type="text"></td>
-              <td><input id="cell-76" type="text"></td>
-              <td><input id="cell-77" type="text"></td>
-              
-              <td><input id="cell-78" type="text"></td>
-              <td><input id="cell-79" type="text"></td>
-              <td><input id="cell-80" type="text"></td>
-            </tr>
+              <tr>          
+                <td><input id="cell-63" type="number" min="1" max="9"></td>
+                <td><input id="cell-64" type="number" min="1" max="9"></td>
+                <td><input id="cell-65" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-66" type="number" min="1" max="9"></td>
+                <td><input id="cell-67" type="number" min="1" max="9"></td>
+                <td><input id="cell-68" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-69" type="number" min="1" max="9"></td>
+                <td><input id="cell-70" type="number" min="1" max="9"></td>
+                <td><input id="cell-71" type="number" min="1" max="9"></td>
+              </tr>
 
-          </table>
+              <tr>          
+                <td><input id="cell-72" type="number" min="1" max="9"></td>
+                <td><input id="cell-73" type="number" min="1" max="9"></td>
+                <td><input id="cell-74" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-75" type="number" min="1" max="9"></td>
+                <td><input id="cell-76" type="number" min="1" max="9"></td>
+                <td><input id="cell-77" type="number" min="1" max="9"></td>
+                
+                <td><input id="cell-78" type="number" min="1" max="9"></td>
+                <td><input id="cell-79" type="number" min="1" max="9"></td>
+                <td><input id="cell-80" type="number" min="1" max="9"></td>
+              </tr>
+
+            </table>
+
+          </form>
           
           <br>
           <button type="button" class="btn btn-primary" onClick="refreshPage()">Generate</button>&nbsp;
-          <button type="button" class="btn btn-success" onClick="showSudoku()">Solve</button>
+          <button type="button" class="btn btn-success" onClick="submit()">Submit</button>&nbsp;
+          <button type="button" class="btn btn-danger" onClick="showSudoku()">Solve</button>&nbsp;
+          <button type="button" class="btn btn-warning" onClick="unshowSudoku()">Unsolve</button>
+          <br><br>
+          <p id="note">Note: Press submit to save your current sudoku board and check whether you have solved the puzzle or not.</p>
         </div>
 
         <div class="col-sm-6">
@@ -165,260 +173,4 @@
 </html>
 
 <script type="text/javascript" src="jquery.js"></script>
-
-<script type="text/javascript">
-  // we start with an empty sudoku...
-  var sudoku = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
-  var steps;
-  var log = '';
-
-  // ... and we solve it!!
-  solve(sudoku);
-
-  // given a sudoku cell, returns the row
-  function returnRow(cell) {
-    return Math.floor(cell / 9);
-  }
-
-  // given a sudoku cell, returns the column
-  function returnCol(cell) {
-    return cell % 9;
-  }
-
-  // given a sudoku cell, returns the 3x3 block
-  function returnBlock(cell) {
-    return Math.floor(returnRow(cell) / 3) * 3 + Math.floor(returnCol(cell) / 3);
-  }
-
-  // given a number, a row and a sudoku, returns true if the number can be placed in the row
-  function isPossibleRow(number,row,sudoku) {
-    for (var i=0; i<=8; i++) {
-      if (sudoku[row*9+i] == number) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  // given a number, a column and a sudoku, returns true if the number can be placed in the column
-  function isPossibleCol(number,col,sudoku) {
-    for (var i=0; i<=8; i++) {
-      if (sudoku[col+9*i] == number) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  // given a number, a 3x3 block and a sudoku, returns true if the number can be placed in the block
-  function isPossibleBlock(number,block,sudoku) {
-    for (var i=0; i<=8; i++) {
-      if (sudoku[Math.floor(block/3)*27+i%3+9*Math.floor(i/3)+3*(block%3)] == number) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  // given a cell, a number and a sudoku, returns true if the number can be placed in the cell
-  function isPossibleNumber(cell,number,sudoku) {
-    var row = returnRow(cell);
-    var col = returnCol(cell);
-    var block = returnBlock(cell);
-    return isPossibleRow(number,row,sudoku) && isPossibleCol(number,col,sudoku) && isPossibleBlock(number,block,sudoku);
-  }
-
-  // given a row and a sudoku, returns true if it's a legal row
-  function isCorrectRow(row,sudoku) {
-    var rightSequence = new Array(1,2,3,4,5,6,7,8,9);
-    var rowTemp= new Array();
-    for (var i=0; i<=8; i++) {
-      rowTemp[i] = sudoku[row*9+i];
-    }
-    rowTemp.sort();
-    return rowTemp.join() == rightSequence.join();
-  }
-
-  // given a column and a sudoku, returns true if it's a legal column
-  function isCorrectCol(col,sudoku) {
-    var rightSequence = new Array(1,2,3,4,5,6,7,8,9);
-    var colTemp= new Array();
-    for (var i=0; i<=8; i++) {
-      colTemp[i] = sudoku[col+i*9];
-    }
-    colTemp.sort();
-    return colTemp.join() == rightSequence.join();
-  }
-
-  // given a 3x3 block and a sudoku, returns true if it's a legal block 
-  function isCorrectBlock(block,sudoku) {
-    var rightSequence = new Array(1,2,3,4,5,6,7,8,9);
-    var blockTemp= new Array();
-    for (var i=0; i<=8; i++) {
-      blockTemp[i] = sudoku[Math.floor(block/3)*27+i%3+9*Math.floor(i/3)+3*(block%3)];
-    }
-    blockTemp.sort();
-    return blockTemp.join() == rightSequence.join();
-  }
-
-  // given a sudoku, returns true if the sudoku is solved
-  function isSolvedSudoku(sudoku) {
-    for (var i=0; i<=8; i++) {
-      if (!isCorrectBlock(i,sudoku) || !isCorrectRow(i,sudoku) || !isCorrectCol(i,sudoku)) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  // given a cell and a sudoku, returns an array with all possible values we can write in the cell
-  function determinePossibleValues(cell,sudoku) {
-    var possible = new Array();
-    for (var i=1; i<=9; i++) {
-      if (isPossibleNumber(cell,i,sudoku)) {
-        possible.unshift(i);
-      }
-    }
-    return possible;
-  }
-
-  // given an array of possible values assignable to a cell, returns a random value picked from the array
-  function determineRandomPossibleValue(possible,cell) {
-    var randomPicked = Math.floor(Math.random() * possible[cell].length);
-    return possible[cell][randomPicked];
-  }
-
-  // given a sudoku, returns a two dimension array with all possible values 
-  function scanSudokuForUnique(sudoku) {
-    var possible = new Array();
-    for (var i=0; i<=80; i++) {
-      if (sudoku[i] == 0) {
-        possible[i] = new Array();
-        possible[i] = determinePossibleValues(i,sudoku);
-        if (possible[i].length==0) {
-          return false;
-        }
-      }
-    }
-    return possible;
-  }
-
-  // given an array and a number, removes the number from the array
-  function removeAttempt(attemptArray,number) {
-    var newArray = new Array();
-    for (var i=0; i<attemptArray.length; i++) {
-      if (attemptArray[i] != number) {
-        newArray.unshift(attemptArray[i]);
-      }
-    }
-    return newArray;
-  }
-
-  // given a two dimension array of possible values, returns the index of a cell where there are the less possible numbers to choose from
-  function nextRandom(possible) {
-    var max = 9;
-    var minChoices = 0;
-    for (var i=0; i<=80; i++) {
-      if (possible[i]!=undefined) {
-        if ((possible[i].length<=max) && (possible[i].length>0)) {
-          max = possible[i].length;
-          minChoices = i;
-        }
-      }
-    }
-    return minChoices;
-  }
-
-  // given a sudoku, solves it
-  function solve() {
-    var saved = new Array();
-    var savedSudoku = new Array();
-    var i=0;
-    var nextMove;
-    var whatToTry;
-    var attempt;
-    while (!isSolvedSudoku(sudoku)) {
-      i++;
-      nextMove = scanSudokuForUnique(sudoku);
-      /* scanSudokuForUnique: tìm cách tìm ra tập các giá trị có thể cho từng vị trí một cách tuần tự, nếu giữa chừng ko đc thì return false nếu được thì return mảng 2 chiều với tất cả giá trị có thể cho từng vị trí của sudoku và gán cho nextMove
-      */
-      if (nextMove == false) {
-        nextMove = saved.pop();
-        sudoku = savedSudoku.pop();
-      }
-      whatToTry = nextRandom(nextMove); // nextRandom: given a two dimension array of possible values, returns the index of a cell where there are the less possible numbers to choose from
-      // whatToTry lúc này là một index. index này có ít khả năng ngẫu nhiên nhất trong bảng sudoku
-      attempt = determineRandomPossibleValue(nextMove,whatToTry); // nextMove ở đây là 1 sudoku = array 2 chiều
-      // attempt = giá trị của cell 
-      if (nextMove[whatToTry].length>1) {
-        nextMove[whatToTry] = removeAttempt(nextMove[whatToTry],attempt);
-        saved.push(nextMove.slice());
-        savedSudoku.push(sudoku.slice());
-      }
-      sudoku[whatToTry] = attempt;
-      var output = "<pre>Assigning: " + attempt + " into " + whatToTry + "</pre>";
-      log = log + output;
-    }
-    steps = i;
-    showPuzzle();
-  }
-
-  function showPuzzle() {
-    var numOfCellsToHide = Math.floor(Math.random() * (56 - 46 + 1)) + 46;
-    console.log('numOfCellsToHide: ' + numOfCellsToHide);
-    var cellsToHide = new Array();
-    for(var i=0; i<81; i++) {
-      cellsToHide[i] = i;
-    }
-
-    // randomize the array
-    cellsToHide.sort(function () {
-        return Math.random() - 0.5;
-    });
-    
-    // shorten the array
-    for(var i=0; i<81-numOfCellsToHide; i++) {
-      cellsToHide.pop();
-    }
-    console.log(cellsToHide);
-
-    var count = 0;
-    for (var i=0; i<=8; i++) {
-      for (var j=0; j<=8; j++) {  
-        var id = 'cell-';    
-        id = id.concat(count);
-        console.log('count: ' + count);
-        if(cellsToHide.includes(count)) {
-          console.log(cellsToHide.includes(count));
-          $('#' + id).val('');
-        } else {
-          $('#' + id).val(sudoku[i*9+j]);
-        }
-        count++;
-      }
-    }
-
-  }
-
-  //given a solved sudoku and the number of steps, prints out the sudoku
-  function showSudoku() {
-    var count = 0;
-    var totalSteps = "Solved in "+steps+" steps";
-    document.getElementById("show-total-steps").innerHTML = totalSteps;
-    document.getElementById("show-log").innerHTML = log;
-
-    for (var i=0; i<=8; i++) {
-      for (var j=0; j<=8; j++) {
-        var id = 'cell-';
-        id = id.concat(count);
-        $('#' + id).val(sudoku[i*9+j]);
-        count++;
-      }
-    }
-  }
-
-  function refreshPage(){
-    window.location.reload();
-  }
-
-</script>
+<script type="text/javascript" src="sudoku.js"></script>
