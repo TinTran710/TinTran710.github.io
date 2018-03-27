@@ -175,14 +175,19 @@ function solve() {
   var nextMove;
   var whatToTry;
   var attempt;
+
   while (!isSolvedSudoku(sudoku)) {
     i++;
     nextMove = scanSudokuForUnique(sudoku);
+    var outputRemove = '';
+    var outputAssign;
+    var output;
     /* scanSudokuForUnique: tìm cách tìm ra tập các giá trị có thể cho từng vị trí một cách tuần tự, nếu giữa chừng ko đc thì return false nếu được thì return mảng 2 chiều với tất cả giá trị có thể cho từng vị trí của sudoku và gán cho nextMove
     */
     if (nextMove == false) {
       nextMove = saved.pop();
       sudoku = savedSudoku.pop();
+      outputRemove = "<pre style='color: red; font-weight: bold;'>Removing: " + attempt + " from " + whatToTry + "</pre>";
     }
     whatToTry = nextRandom(nextMove); // nextRandom: given a two dimension array of possible values, returns the index of a cell where there are the less possible numbers to choose from
     // whatToTry lúc này là một index. index này có ít khả năng ngẫu nhiên nhất trong bảng sudoku
@@ -194,7 +199,8 @@ function solve() {
       savedSudoku.push(sudoku.slice());
     }
     sudoku[whatToTry] = attempt;
-    var output = "<pre>Assigning: " + attempt + " into " + whatToTry + "</pre>";
+   	outputAssign = "<pre>Assigning: " + attempt + " into " + whatToTry + "</pre>";
+   	output = outputAssign + outputRemove;
     log = log + output;
   }
   steps = i;
@@ -217,7 +223,7 @@ function showPuzzle() {
   for(var i=0; i<81-numOfCellsToHide; i++) {
     cellsToHide.pop();
   }
-
+ 
   var count = 0;
   for (var i=0; i<=8; i++) {
     for (var j=0; j<=8; j++) {  
@@ -250,7 +256,7 @@ function submit() {
     document.getElementById("show-log").innerHTML = '<div class="alert alert-success"><p><b>Congratulations!</b> You have successfully solved the puzzle!</p></div>';
   }
 }
-
+	
 
 function unshowSudoku() {
   var count = 0;
@@ -294,6 +300,20 @@ function showSudoku() {
   }
 }
 
-function refreshPage(){
-  window.location.reload();
+function generate() {
+  	var head= document.getElementsByTagName('head')[0];
+  	var script= document.createElement('script');
+  	script.type= 'text/javascript';
+  	script.src= 'sudoku.js';
+  	head.appendChild(script);
+
+  	var count = 0;
+	for (var i=0; i<=8; i++) {
+    	for (var j=0; j<=8; j++) {
+	      var id = 'cell-';
+	      id = id.concat(count);
+	      $('#' + id).prop('disabled', false);
+	      count++;
+    	}
+  	}
 }
