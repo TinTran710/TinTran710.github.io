@@ -308,7 +308,7 @@ function generate() {
   	head.appendChild(script);
 
   	var count = 0;
-	for (var i=0; i<=8; i++) {
+	  for (var i=0; i<=8; i++) {
     	for (var j=0; j<=8; j++) {
 	      var id = 'cell-';
 	      id = id.concat(count);
@@ -316,4 +316,6 @@ function generate() {
 	      count++;
     	}
   	}
+    document.getElementById("show-total-steps").innerHTML = '';
+    document.getElementById("show-log").innerHTML = '';
 }
